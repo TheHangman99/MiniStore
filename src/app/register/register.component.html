@@ -1,0 +1,85 @@
+<form class="register-wrapper vh-100 d-flex align-items-center justify-content-center"
+      [formGroup]="profileForm"
+      (ngSubmit)="onSubmit()">
+  <div class="register-card shadow-lg p-5 rounded">
+    <h2 class="text-center mb-4 text-primary fw-bold">Create Account</h2>
+
+ 
+    <div class="mb-3">
+      <label for="fname" class="form-label fw-semibold">First Name</label>
+      <input type="text"
+             name="fname"
+             id="fname"
+             class="form-control stylish-input"
+             formControlName="fName"
+             placeholder="Enter your first name" />
+    </div>
+
+    
+    <div class="mb-3">
+      <label for="lname" class="form-label fw-semibold">Last Name</label>
+      <input type="text"
+             name="lname"
+             id="lname"
+             class="form-control stylish-input"
+             formControlName="lName"
+             placeholder="Enter your last name" />
+    </div>
+
+    
+    <div class="mb-3">
+      <label for="age" class="form-label fw-semibold">Age</label>
+      <input type="number"
+             name="age"
+             id="age"
+             class="form-control stylish-input"
+             formControlName="age"
+             placeholder="Enter your age" />
+    </div>
+
+    
+    <div class="mb-3">
+      <label for="email" class="form-label fw-semibold">Email</label>
+      <input type="email"
+             name="email"
+             id="email"
+             class="form-control stylish-input"
+             formControlName="email"
+             placeholder="Enter your email" />
+    </div>
+
+    <div class="mb-3">
+      <label for="userName" class="form-label fw-semibold">Username</label>
+      <input type="text"
+             name="userName"
+             id="userName"
+             class="form-control stylish-input"
+             formControlName="userName"
+             placeholder="Enter your username" />
+    </div>
+
+
+    
+    <div class="mb-4">
+      <label for="password" class="form-label fw-semibold">Password</label>
+      <input type="password"
+             name="password"
+             id="password"
+             class="form-control stylish-input"
+             formControlName="password"
+             placeholder="Enter your password" />
+    </div>
+
+    <div class="mb-4">
+      <label for="confirmPassword" class="form-label fw-semibold">Confirm Password</label>
+      <input type="password"
+             name="confirmPassword"
+             id="confirmPassword"
+             class="form-control stylish-input"
+             formControlName="confirmPassword"
+             placeholder="Confirm your password" />
+    </div>
+
+    <button class="btn btn-gradient w-100" type="submit">Register</button>
+  </div>
+</form>

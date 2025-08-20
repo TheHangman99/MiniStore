@@ -1,0 +1,47 @@
+<form class="vh-100 d-flex align-items-center justify-content-center bg-gradient"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()">
+
+  <div class="card shadow-lg p-5 rounded" style="width: 100%; max-width: 400px;">
+    <h3 class="text-center mb-4">Welcome Back</h3>
+
+    
+    <div class="mb-3">
+      <label for="userName" class="form-label fw-semibold">Username</label>
+      <input type="text"
+             name="userName"
+             id="userName"
+             class="form-control"
+             formControlName="username"
+             placeholder="Enter your username" />
+      <div class="alert alert-danger mt-2 py-1 px-2"
+           role="alert"
+           *ngIf="loginForm.controls.username.invalid && loginForm.controls.username.touched">
+        <strong>Please enter a valid username</strong>
+      </div>
+    </div>
+
+    
+    <div class="mb-3">
+      <label for="password" class="form-label fw-semibold">Password</label>
+      <input type="password"
+             name="password"
+             id="password"
+             class="form-control"
+             formControlName="password"
+             placeholder="Enter your password" />
+      <div class="alert alert-danger mt-2 py-1 px-2"
+           role="alert"
+           *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched">
+        <strong>Please enter a valid password</strong>
+      </div>
+    </div>
+
+    
+    <button class="btn btn-primary w-100"
+            type="submit"
+            [disabled]="loginForm.invalid && loginForm.touched">
+      Login
+    </button>
+  </div>
+</form>

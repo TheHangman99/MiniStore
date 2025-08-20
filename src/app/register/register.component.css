@@ -1,0 +1,46 @@
+
+.register-wrapper {
+  background: linear-gradient(to right, #0d6efd, #6ea8fe);
+}
+
+
+.register-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  margin: auto;
+}
+
+
+.stylish-input {
+  border: 2px solid #d0dfff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.stylish-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+
+.btn-gradient {
+  background: linear-gradient(to right, #0d6efd, #4e9efc);
+  border: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #0b5ed7, #2d8dfc);
+}

@@ -1,0 +1,24 @@
+.contact-wrapper {
+  background-color: #f9f9f9;
+  min-height: 80vh;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #0056b3, #00a0cc);
+}
+
+.alert {
+  font-size: 16px;
+  border-radius: 8px;
+}
